@@ -44,6 +44,7 @@ public class InfiltrationSpell : MonoBehaviour
         if(Input.GetMouseButton(0) && isInfiltrationActive)
         {
             iTween.MoveTo(this.gameObject, hitUp.transform.position, 3f);
+            portalTexture.transform.position = new Vector3(portalTexture.transform.position.x, 1000, portalTexture.transform.position.z);
             isInfiltrationActive = false;
         }
     }
